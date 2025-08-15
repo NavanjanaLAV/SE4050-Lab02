@@ -1,0 +1,5 @@
+Q1: What happens when the number of hidden nodes increases?
+Typically, accuracy rises from very small sizes (which underfit), then plateaus; with very large sizes you may see overfitting (training accuracy up, generalization down) or training instability unless you regularize or tune learning rate.
+
+Q2: Explain the pattern.
+Small hidden layers can’t model complex boundaries (high bias). More units → more capacity → better fit → diminishing returns. Past a point, extra units add parameters and variance → risk of overfitting; accuracy may fluctuate or drop on test data without regularization/early stopping.
